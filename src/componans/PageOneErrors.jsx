@@ -79,31 +79,7 @@ export const ArabicOnlyError = () => (
     </svg>
 );
 
-export const SingleSpaceError = () => (
-    <svg
-        className="error-svg"
-        viewBox="0 0 360 48"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-label="مسموح بمسافة واحدة فقط"
-    >
-        <text
-            x="50%"
-            y="50%"
-            dominantBaseline="middle"
-            textAnchor="middle"
-            fill="#86888E"
-            fontSize="28"
-            fontWeight="600"
-        >
-            مسموح بمسافة واحدة فقط
-        </text>
-    </svg>
-);
-
 export const PAGE_ONE_ERRORS = {
     empty: EmptyNameError,
     arabic: ArabicOnlyError,
-    space: SingleSpaceError,
 };

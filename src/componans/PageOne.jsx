@@ -68,15 +68,16 @@ const PageOne = () => {
                             placeholder="اسمك يهمنا!"
                             value={name}
                             onChange={(e) => {
-                                // Strip any second space (e.g. from paste) — allow max one space
                                 let val = e.target.value;
+                                // No leading spaces
+                                val = val.replace(/^\s+/, '');
+                                // Max one space (strip extras from paste, etc.)
                                 const firstSpace = val.indexOf(' ');
                                 if (firstSpace !== -1) {
-                                    // Keep only up to and including the first space, then the rest with no spaces
-                                    val = val.slice(0, firstSpace + 1) + val.slice(firstSpace + 1).replace(/ /g, '');
+                                    val = val.slice(0, firstSpace + 1) + val.slice(firstSpace + 1).replace(/\s/g, '');
                                 }
                                 setName(val);
-                                // Error 1: show Arabic-only error while typing non-Arabic
+
                                 const arabicOnly = /^[\u0600-\u06FF\s]*$/;
                                 if (val && !arabicOnly.test(val)) {
                                     setErrorType('arabic');
@@ -85,11 +86,14 @@ const PageOne = () => {
                                 }
                             }}
                             onKeyDown={(e) => {
-                                // Block a second space and show error
-                                if (e.key === ' ' && name.includes(' ')) {
+                                if (e.key !== ' ') return;
+                                // Block leading space or a second space — the character never appears
+                                if (name.length === 0) {
                                     e.preventDefault();
-                                    setErrorType('space');
                                     return;
+                                }
+                                if (name.includes(' ')) {
+                                    e.preventDefault();
                                 }
                             }}
                             // style={errorType ? { color: '#fff' } : {}}

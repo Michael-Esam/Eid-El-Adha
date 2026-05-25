@@ -215,7 +215,7 @@ const PageFour = () => {
                                 disabled={!isReady}
                                 title="Share via TikTok"
                             >
-                                <img src="/tiktok.png" alt="TikTok" style={{ width: 28, height: 28 }} />
+                                <img src="/tik-tok.png" alt="TikTok" style={{ width: 28, height: 28 }} />
                             </button>
                             <button
                                 className="share-btn linkedin"

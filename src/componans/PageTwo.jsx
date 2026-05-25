@@ -12,7 +12,7 @@ const PageTwo = () => {
 
     const handleNext = () => {
         if (!selectedOption) {
-            setErrorMessage('الرجاء اختيار أحد الخيارات للمتابعة');
+            setErrorMessage('');
             return;
         }
         navigate('/page-three', {
