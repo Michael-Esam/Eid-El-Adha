@@ -92,7 +92,7 @@ const PageOne = () => {
                                     return;
                                 }
                             }}
-                            style={errorType ? { color: '#fff' } : {}}
+                            // style={errorType ? { color: '#fff' } : {}}
                         />
                         <button onClick={handleNext}>التالي</button>
                     </div>
