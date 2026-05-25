@@ -73,9 +73,10 @@ body {
 /* Specific styling for Page 3 with a repeating background */
 .page-three {
   background-image: url("./assets/backgrounds/design.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: contain;
   width: 90%;
+  background-size: 100% 100%;
   max-width: 950px;
   min-height: 600px;
   padding: 40px 0;
@@ -83,7 +84,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
 }
 
 /* ==========================================================================
@@ -269,6 +269,10 @@ header .right img {
   margin: 0 auto;
 }
 
+.error-message .error-svg--arabic {
+  max-width: 368px;
+}
+
 .page-two .error-message {
   font-size: 20px;
   margin-top: 5px;
@@ -347,7 +351,9 @@ header .right img {
   margin-left: 100px;
   margin-bottom: 190px;
 }
-
+.action-buttons {
+  margin-bottom: 285px;
+}
 .card .action-buttons button {
   padding: 15px 70px;
   margin-top: 0;
@@ -365,11 +371,15 @@ header .right img {
   5. GRID SYSTEM (PAGE THREE)
   ========================================================================== */
 .grid-container {
+  direction: ltr;
   display: grid;
-  /* 2 columns for larger screens */
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(220px, 280px));
   gap: 20px;
-  width: 100%;
+  margin-right: -160px;
+  margin-top: 62px;
+  width: 70%;
+  max-height: 1260px;
+  overflow: scroll;
   max-width: 760px;
   margin-bottom: 30px;
 }
@@ -930,7 +940,6 @@ footer span {
   } */
 
   .page-three {
-    border-radius: 20px;
     width: 90%;
     min-height: 470px;
     margin: 20px auto;
@@ -1027,11 +1036,18 @@ footer span {
     margin-bottom: 65px;
   }
 
-
+  .page-three .action-buttons {
+    margin-bottom: 100px;
+}
   /* Reduce grid to single column on mobile screens */
   .grid-container {
     gap: 12px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, minmax(215px, 300px));
+    margin-right: -55px;
+    margin-top: 15px;
+    width: 70%;
+    max-height: 450px;
+    margin-bottom: 15px;
   }
 
   .name-overlay {

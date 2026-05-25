@@ -201,7 +201,7 @@ const PageThree = () => {
             {/* <CountdownOverlay loaded={loadedCards.size >= designs.length} /> */}
             <main className="page-three">
                 <div className="card">
-                    <h3 className="page-three-title">اختر التصميم المناسب لك</h3>
+                    {/* <h3 className="page-three-title">اختر التصميم المناسب لك</h3> */}
                     <div className="grid-container">
                         {designs.map((design, index) => (
                             <div
