@@ -1061,6 +1061,9 @@ footer span {
     max-height: 450px;
     margin-bottom: 15px;
   }
+  .btn-view {
+    margin-top: 190px !important;
+  }
 
   .name-overlay {
     font-size: 14px;
@@ -1081,7 +1084,7 @@ footer span {
     padding: 15px 5px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url("./design.png");
+    background-image: url("./assets/backgrounds/design.png");
     border-radius: 0;
   }
   .page-four .canvas-section canvas {
