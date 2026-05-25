@@ -980,6 +980,9 @@ footer span {
 
 
   }
+  .page-two .card-content {
+    margin-top: 15px;
+}
 
   .page-two .card {
     padding: 10% 5%;
