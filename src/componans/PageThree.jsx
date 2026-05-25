@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { useLocation, Link, Navigate, useNavigate } from 'react-router-dom';
 import Header from './Header';
+import Footer from './Footer';
 
 // ── cache out  component ──────────────────────────────
 const imageCache = {};
@@ -240,11 +241,7 @@ const PageThree = () => {
                     </div>
                 </div>
             )}
-            <footer>
-                <a href='https://linktr.ee/ai.wadod' target='_blank' rel="noreferrer">
-                    تصميم و تطوير <span>ودود</span>
-                </a>
-            </footer>
+            <Footer />
         </div>
     );
 };

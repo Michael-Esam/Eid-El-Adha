@@ -3,6 +3,7 @@ import { useLocation, Navigate } from 'react-router-dom';
 import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Header from './Header';
+import Footer from './Footer';
 
 
 const PageFour = () => {
@@ -193,11 +194,7 @@ const PageFour = () => {
                     </div>
                 </div>
             </main>
-            <footer>
-                <a href='https://linktr.ee/ai.wadod' target='_blank' rel="noopener noreferrer">
-                    تصميم و تطوير <span>ودود</span>
-                </a>
-            </footer>
+            <Footer />
         </div>
     );
 };
