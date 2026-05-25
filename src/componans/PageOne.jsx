@@ -68,9 +68,12 @@ const PageOne = () => {
                             placeholder="اسمك يهمنا!"
                             value={name}
                             onChange={(e) => {
-                                let val = e.target.value;
+                                const raw = e.target.value;
+                                let val = raw;
                                 // No leading spaces
                                 val = val.replace(/^\s+/, '');
+                                const hadExtraSpace =
+                                    raw !== val || (raw.match(/\s/g) || []).length > 1;
                                 // Max one space (strip extras from paste, etc.)
                                 const firstSpace = val.indexOf(' ');
                                 if (firstSpace !== -1) {
@@ -81,19 +84,23 @@ const PageOne = () => {
                                 const arabicOnly = /^[\u0600-\u06FF\s]*$/;
                                 if (val && !arabicOnly.test(val)) {
                                     setErrorType('arabic');
+                                } else if (hadExtraSpace) {
+                                    setErrorType('empty');
                                 } else {
                                     setErrorType('');
                                 }
                             }}
                             onKeyDown={(e) => {
                                 if (e.key !== ' ') return;
-                                // Block leading space or a second space — the character never appears
+                                // Block leading space or a second space — show same error as empty name
                                 if (name.length === 0) {
                                     e.preventDefault();
+                                    setErrorType('empty');
                                     return;
                                 }
                                 if (name.includes(' ')) {
                                     e.preventDefault();
+                                    setErrorType('empty');
                                 }
                             }}
                             // style={errorType ? { color: '#fff' } : {}}
