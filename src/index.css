@@ -72,7 +72,7 @@ body {
 
 /* Specific styling for Page 3 with a repeating background */
 .page-three {
-  background-image: url("./design-page-3.png");
+  background-image: url("./assets/backgrounds/design-page-3.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 90%;
@@ -949,7 +949,7 @@ footer span {
   } */
 
   .page-three {
-    background-image: url("./design-page-3-mob.png");
+    background-image: url("./assets/backgrounds/design-page-3-mob.png");
     width: 90%;
     min-height: 470px;
     margin: 20px auto;
