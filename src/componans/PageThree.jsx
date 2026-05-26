@@ -43,7 +43,7 @@ const normalAssetUrls = import.meta.glob('../assets/images/normal/*.{png,jpg,jpe
 
 // ── 
 const google = [
-    { id: 1, image: getAssetUrlByFilename(googleAssetUrls, 'design1.jpg'), textX: 2500, textY: 6150, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 1, image: getAssetUrlByFilename(googleAssetUrls, 'design1.jpg'), textX: 2500, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 2, image: getAssetUrlByFilename(googleAssetUrls, 'design2.jpg'), textX: 2500, textY: 2950, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 3, image: getAssetUrlByFilename(googleAssetUrls, 'design3.jpg'), textX: 2500, textY: 2950, fontSizeRatio: 0.04, color: '#eb4335', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 4, image: getAssetUrlByFilename(googleAssetUrls, 'design4.jpg'), textX: 2500, textY: 6620, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
@@ -57,7 +57,7 @@ const google = [
 ];
 
 const normal = [
-    { id: 1, image: getAssetUrlByFilename(normalAssetUrls, 'design1.jpg'), textX: 2500, textY: 6150, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
+    { id: 1, image: getAssetUrlByFilename(normalAssetUrls, 'design1.jpg'), textX: 2500, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 2, image: getAssetUrlByFilename(normalAssetUrls, 'design2.jpg'), textX: 2500, textY: 2950, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 3, image: getAssetUrlByFilename(normalAssetUrls, 'design3.jpg'), textX: 2500, textY: 2950, fontSizeRatio: 0.04, color: '#eb4335', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 4, image: getAssetUrlByFilename(normalAssetUrls, 'design4.jpg'), textX: 2500, textY: 6620, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },

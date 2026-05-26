@@ -267,8 +267,7 @@ header .right img {
 
 .error-message .error-svg {
   display: block;
-  width: 100%;
-  max-width: 319px;
+  width: 430px;
   height: auto;
   margin: 0 auto;
 }
@@ -392,7 +391,6 @@ header .right img {
 .grid-item {
   position: relative;
   background-color: #d1d1d1;
-  border-radius: 12px;
   aspect-ratio: 3 / 4.2;
   cursor: pointer;
   overflow: hidden;
@@ -1070,7 +1068,16 @@ footer span {
     margin-bottom: 15px;
   }
   .btn-view {
-    margin-top: 190px !important;
+    margin-top: 90px !important;
+    padding: 1px 30px !important;
+    font-size: 18px !important;
+    min-width: 0;
+  }
+  .btn-select{
+    margin-top: -5px !important;
+    padding: 1px 30px !important;
+    font-size: 18px !important;
+    min-width: 0;
   }
 
   .name-overlay {
@@ -1164,6 +1171,11 @@ footer span {
   .page-two .error-message {
     margin: 0;
     font-size: 14px;
+  }
+
+  .error-message .error-svg{
+    width: 100%;
+    max-width: 319px;
   }
 
 }
