@@ -54,6 +54,7 @@ const google = [
     { id: 9, image: getAssetUrlByFilename(googleAssetUrls, 'design9.jpg'), textX: 2500, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 10, image: getAssetUrlByFilename(googleAssetUrls, 'design10.jpg'), textX: 2500, textY: 3810, fontSizeRatio: 0.04, color: '#000000', fontFamily: FONTS.IBM_PLEX_ARABIC },
     { id: 11, image: getAssetUrlByFilename(googleAssetUrls, 'design11.jpg'), textX: 2300, textY: 1400, fontSizeRatio: 0.05, color: '#ffffff', fontFamily: FONTS.AYNAMA_CURVED },
+    { id: 12, image: getAssetUrlByFilename(googleAssetUrls, 'design12.jpg'), textX: 1200, textY: 800, fontSizeRatio: 0.04, color: '#ffffff', fontFamily: FONTS.IBM_PLEX_ARABIC },
 ];
 
 const normal = [
